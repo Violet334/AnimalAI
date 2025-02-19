@@ -7,9 +7,9 @@ using TMPro;
 namespace NodeCanvas.Tasks.Actions {
 
 	public class TravelAT : ActionTask {
-		public BBParameter<Transform> target;
-		public TextMeshProUGUI text;
+        public string sFxName;
 
+        public BBParameter<Transform> target;
 		NavMeshAgent navAgent;
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
@@ -22,9 +22,8 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-			text.text = "Travelling...";
-
-			navAgent.SetDestination(target.value.position);
+            AudioManager.Instance.PlaySound(sFxName);
+            navAgent.SetDestination(target.value.position);
 		}
 
 		//Called once per frame while the action is active.

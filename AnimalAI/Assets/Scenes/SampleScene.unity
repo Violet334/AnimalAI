@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"text":1,"target":{"_name":"target","_targetVariableID":"a15f0a89-ff6a-4419-ad7d-c7e52b628fea"},"destination":2,"$type":"NodeCanvas.Tasks.Actions.SearchingAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Searching","_position":{"x":124.0,"y":28.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"target","_targetVariableID":"a15f0a89-ff6a-4419-ad7d-c7e52b628fea"},"text":1,"$type":"NodeCanvas.Tasks.Actions.TravelAT"}]},"_color":{"r":0.2028747,"g":0.3163756,"b":0.9150943,"a":1.0},"_name":"Travel","_position":{"x":293.0,"y":99.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"food":3,"destination":4,"target":{"_name":"target","_targetVariableID":"a15f0a89-ff6a-4419-ad7d-c7e52b628fea"},"text":1,"$type":"NodeCanvas.Tasks.Actions.GatherAT"}]},"_color":{"r":1.0,"g":0.9901462,"b":0.0518868,"a":1.0},"_name":"Gather","_position":{"x":422.02,"y":182.6977},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_nestedFSM":{"_value":5},"_position":{"x":529.1718,"y":253.2979},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"text":1,"target":{"_name":"target","_targetVariableID":"a15f0a89-ff6a-4419-ad7d-c7e52b628fea"},"destination":2,"$type":"NodeCanvas.Tasks.Actions.SearchingAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Searching","_position":{"x":124.0,"y":28.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"target","_targetVariableID":"a15f0a89-ff6a-4419-ad7d-c7e52b628fea"},"$type":"NodeCanvas.Tasks.Actions.TravelAT"}]},"_color":{"r":0.2028747,"g":0.3163756,"b":0.9150943,"a":1.0},"_name":"Travel","_position":{"x":293.0,"y":99.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"food":3,"destination":4,"target":{"_name":"target","_targetVariableID":"a15f0a89-ff6a-4419-ad7d-c7e52b628fea"},"text":1,"$type":"NodeCanvas.Tasks.Actions.GatherAT"}]},"_color":{"r":1.0,"g":0.9901462,"b":0.0518868,"a":1.0},"_name":"Gather","_position":{"x":422.02,"y":182.6977},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_nestedFSM":{"_value":5},"_position":{"x":529.1718,"y":253.2979},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 346572128}
@@ -230,7 +230,7 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 49.134804, y: 111.11571}
+    _translation: {x: 41, y: 91}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -1030,6 +1030,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1153200429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153200431}
+  - component: {fileID: 1153200430}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1153200430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153200429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c72ad25672d6a448cfad9daa214ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMasterVolume: 100
+  defaultEffectsVolume: 100
+  sounds:
+  - name: footsteps
+    clip: {fileID: 8300000, guid: df7087e4d8a8bb546bc08ce68632903f, type: 3}
+    volume: 0
+    pitch: 0
+    looping: 1
+    source: {fileID: 0}
+    type: 0
+--- !u!4 &1153200431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153200429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.332527, y: -3.0054178, z: 0.35670853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1271153688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,3 +1739,4 @@ SceneRoots:
   - {fileID: 1961149450}
   - {fileID: 1011391415}
   - {fileID: 23489765}
+  - {fileID: 1153200431}
