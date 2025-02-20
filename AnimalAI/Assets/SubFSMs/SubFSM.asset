@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: SubFSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"quality":{"_name":"quality","_targetVariableID":"410180e4-1a8d-4ab7-b316-ea37198619bf"},"$type":"NodeCanvas.Tasks.Actions.FixingAT"}]},"_color":{"r":0.6456503,"g":1.0,"b":0.3215686,"a":1.0},"_name":"Fixing","_position":{"x":-152.7537,"y":-698.5549},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"quality":{"_name":"quality","_targetVariableID":"410180e4-1a8d-4ab7-b316-ea37198619bf"},"expansion":{"_name":"expansion","_targetVariableID":"03966a75-3271-433d-8ab4-5e325444feed"},"$type":"NodeCanvas.Tasks.Actions.BuildingAT"}]},"_color":{"r":0.3215686,"g":0.9339381,"b":1.0,"a":1.0},"_name":"Building","_position":{"x":-30.75365,"y":-603.5549},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.31
+    _category: 
+    _comments: 
+    _translation: {x: 563.8775, y: 913.07715}
+    _zoomFactor: 1
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}
